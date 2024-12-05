@@ -1,0 +1,75 @@
+ /* Pastikan seluruh halaman memiliki latar belakang hitam */
+ body {
+    background-color: black;
+    color: white; /* Pastikan teks berwarna putih untuk kontras */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #740808;
+    font-family: 'Bauhaus 93', sans-serif;
+}
+
+label {
+    font-family: 'Bradley Hand ITC', cursive;
+    color: #740808;
+    font-size: 1.5em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    border-color: red;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #740808;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-family: 'Bauhaus 93', sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: darkred;;
+}
+/* Efek fade-in dengan blur */
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: fadeInWithBlur 2s ease-out;
+}
+
+/* Animasi fade-in dengan blur */
+@keyframes fadeInWithBlur {
+    0% {
+        opacity: 0;
+        filter: blur(10px); /* Mulai dengan kabur */
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0); /* Jelas pada akhir animasi */
+    }
+}

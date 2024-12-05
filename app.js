@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const todoRoutes = require('./routes/tododb.js');
 require('dotenv').config();
@@ -9,6 +10,8 @@ const { isAuthenticated } = require('./middlewares/middleware.js');
 const expressLayout = require('express-ejs-layouts')
 app.use(expressLayout);
 const db = require('./database/db.js')
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
 app.use('/todos', todoRoutes);
@@ -25,6 +28,7 @@ app.use(session({
 
 app.use('/',authRoutes);
 app.set('view engine', 'ejs');
+
 
 app.get('/', isAuthenticated,(req, res) => {
     res.render('index',{

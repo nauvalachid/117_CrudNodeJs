@@ -1,0 +1,223 @@
+/* styles.css */
+body {
+    background-color: black; /* Latar belakang hitam */
+    color: white; /* Teks putih untuk kontras */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Opsional: Gaya font */
+}
+
+.container {
+    padding: 5px; /* Padding untuk isi */
+    background-color: #121212; /* Warna hitam lebih lembut untuk kontras */
+    border-radius: 10px; /* Opsional: Sudut melengkung */
+}
+.navbar-brand {
+    font-family: 'Bauhaus 93', sans-serif; /* Gunakan font ini jika tersedia */
+    font-size: 2rem; /* Sesuaikan ukuran font */
+    font-weight: bold; /* Tebalkan teks */
+    color: #740808; /* Warna teks merah */
+}
+/* Efek fade-in dengan blur */
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: fadeInWithBlur 2s ease-out;
+}
+
+/* Animasi fade-in dengan blur */
+@keyframes fadeInWithBlur {
+    0% {
+        opacity: 0;
+        filter: blur(10px); /* Mulai dengan kabur */
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0); /* Jelas pada akhir animasi */
+    }
+}
+/* Gunakan font Roboto untuk seluruh halaman */
+body {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #740808;
+}
+
+/* Gunakan font Roboto untuk judul Todo List */
+h1 {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #740808;
+    font-weight: 500;
+}
+
+/* Gunakan font Roboto untuk task list */
+.card-title {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #740808;
+    font-weight: 400; /* Ukuran font normal */
+}
+
+/* Gunakan font Roboto untuk teks tombol */
+.btn {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #740808;
+}
+/* Mengubah latar belakang card menjadi hitam */
+.card {
+    background-color: #121212; /* Latar belakang hitam untuk card */
+    color: white; /* Warna teks menjadi putih untuk kontras */
+    border-radius: 10px; /* Sudut melengkung */
+    border: 6px double #740808;/* Garis border merah */
+}
+
+/* Warna teks pada judul card */
+.card-title {
+    color: #740808; /* Merah untuk teks judul */
+}
+#showAddTaskForm {
+    background-color: #740808; /* Warna merah untuk latar belakang tombol */
+    color: #000000; /* Warna hitam untuk teks */
+    border: none; /* Hapus border default */
+}
+
+#showAddTaskForm:hover {
+    background-color: #cc0000; /* Warna merah lebih gelap untuk efek hover */
+    color: #740808; /* Teks putih untuk kontras saat hover */
+}
+#addTodoForm .form-control {
+    background-color: #740808; /* Latar belakang merah */
+    color: rgb(0, 0, 0); /* Teks putih untuk kontras */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 10px; /* Padding agar lebih nyaman */
+}
+
+#addTodoForm .form-control::placeholder {
+    color: rgb(0, 0, 0); /* Warna placeholder agar tetap terlihat */
+    opacity: 0.8; /* Transparansi placeholder */
+}
+footer {
+    background-color: #121212; /* Warna hitam lembut */
+    color: #740808; /* Warna teks putih */
+    text-align: center; /* Teks di tengah */
+    padding: 15px; /* Ruang dalam */
+    position: fixed; /* Tetap di bawah layar */
+    bottom: 0; /* Posisi di bagian bawah */
+    left: 0; /* Mulai dari sisi kiri layar */
+    width: 100%; /* Lebar penuh layar */
+    border-top: 3px solid #740808; /* Garis atas merah */
+    font-size: 1rem; /* Ukuran teks */
+    box-sizing: border-box; /* Termasuk padding dalam ukuran */
+    z-index: 1000; /* Pastikan di atas elemen lain */
+}
+/* Ubah latar belakang modal menjadi hitam */
+.modal-content.dark-mode {
+    background-color: black; /* Latar belakang hitam */
+    color: white; /* Teks putih untuk kontras */
+    border: none; /* Hilangkan border default */
+}
+
+/* Opsional: Gaya untuk teks tombol di modal */
+.modal-content.dark-mode .btn {
+    background-color: #740808;
+    color: white;
+    border: none;
+}
+
+.modal-content.dark-mode .btn:hover {
+    background-color: #cc0000;
+    color: #740808;
+}
+/* Ubah warna font modal judul dan label */
+.modal-title {
+    color: #740808; /* Merah */
+}
+
+.modal-body label {
+    color: #740808; /* Merah */
+}
+
+/* Tombol "Save Changes" */
+.modal-content.dark-mode .btn-primary {
+    background-color: #740808; /* Hitam */
+    color: black; /* Teks putih */
+    border: none; /* Hilangkan border default */
+}
+
+/* Tombol "Save Changes" saat hover */
+.modal-content.dark-mode .btn-primary:hover {
+    background-color: #740808; /* Abu-abu gelap */
+    color: #740808; /* Merah */
+}
+/* Efek hover untuk tombol Edit */
+.card .btn.editBtn {
+    background-color: #740808; /* Warna dasar merah */
+    color: rgb(0, 0, 0); /* Teks putih */
+    border: none; /* Hilangkan border */
+    transition: background-color 0.3s, transform 0.2s; /* Animasi halus */
+}
+
+.card .btn.editBtn:hover {
+    background-color: #cc0000; /* Warna merah lebih terang saat hover */
+    transform: scale(1.1); /* Perbesar sedikit saat hover */
+    color: #121212; /* Teks hitam */
+}
+
+/* Efek hover untuk tombol Delete */
+.card .btn.deleteBtn {
+    background-color: black; /* Warna dasar hitam */
+    color: white; /* Teks putih */
+    border: none; /* Hilangkan border */
+    transition: background-color 0.3s, transform 0.2s; /* Animasi halus */
+}
+
+.card .btn.deleteBtn:hover {
+    background-color: #740808; /* Warna merah saat hover */
+    transform: scale(1.1); /* Perbesar sedikit saat hover */
+    color: white; /* Teks tetap putih */
+}
+
+/* Tambahkan bayangan dan efek hover pada card */
+.card {
+    background-color: #121212; /* Latar belakang hitam */
+    color: white; /* Teks putih */
+    border-radius: 10px; /* Sudut melengkung */
+    border: 6px double #740808; /* Garis border merah */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi halus */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Geser sedikit ke atas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+}
+/* Tombol Submit */
+#addTodoForm .btn-primary {
+    background-color: #740808; /* Latar belakang merah */
+    color: black; /* Teks hitam */
+    border: none; /* Hilangkan border default */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi halus */
+}
+
+/* Efek hover pada tombol Submit */
+#addTodoForm .btn-primary:hover {
+    background-color: #cc0000; /* Warna merah lebih terang saat hover */
+    color: #121212; /* Teks abu-abu gelap untuk efek */
+    transform: scale(1.05); /* Sedikit perbesar saat hover */
+}
+/* Tambahkan jarak di sekitar tombol Submit */
+#addTodoForm .btn-primary {
+    background-color: #740808; /* Latar belakang merah */
+    color: black; /* Teks hitam */
+    border: none; /* Hilangkan border default */
+    margin-left: 10px; /* Jarak di sebelah kiri tombol */
+    margin-right: 10px; /* Jarak di sebelah kanan tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi halus */
+}
+
+/* Tambahkan jarak untuk seluruh tombol */
+#addTodoForm .input-group-append {
+    margin-top: 10px; /* Jarak atas tombol */
+    margin-bottom: 10px; /* Jarak bawah tombol */
+}
+
+

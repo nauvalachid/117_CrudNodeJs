@@ -1,0 +1,44 @@
+/* Styling navbar */
+.custom-navbar {
+    background-color: #000; /* Warna latar belakang hitam */
+}
+
+.navbar-brand {
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #740808;
+}
+
+/* Gaya menu navigasi */
+.navbar-nav .nav-link, 
+.navbar-collapse form .nav-link {
+    color: #740808 !important; 
+    font-family: 'Bauhaus 93', sans-serif;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+/* Ruang tambahan untuk menu */
+.navbar-nav {
+    margin-right: 1rem; /* Geser menu sedikit ke kiri */
+}
+
+/* Tombol Logout tetap di kanan */
+.ms-auto {
+    margin-left: auto;
+}
+
+/* Toggler */
+.navbar-toggler {
+    border-color: #740808; 
+}
+
+.navbar-toggler-icon {
+    background-color: #740808; 
+}
+/* Ukuran ikon logout */
+.nav-link i {
+    font-size: 1.5rem; /* Menyesuaikan ukuran ikon */
+    margin-left: 0.5rem; /* Jarak antara ikon dan teks (jika ada) */
+}

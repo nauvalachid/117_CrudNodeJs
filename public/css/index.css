@@ -1,0 +1,67 @@
+/* Pastikan latar belakang hitam penuh */
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: fadeIn 1.5s ease-out; /* Efek fade-in untuk seluruh halaman */
+}
+
+/* Hapus margin bawaan dari semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pusatkan gambar dan teks */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Konten berada di atas */
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Tambahkan gaya untuk gambar */
+.container img {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 80px rgba(106, 1, 1, 0.5);
+}
+
+/* Header */
+h1 {
+    font-family: 'Bauhaus 93', sans-serif;
+    color: #740808;
+}
+
+/* Paragraf */
+p {
+    font-family: 'Bradley Hand ITC', cursive;
+    color: #740808;
+    padding: 0 20px; /* Tambahkan padding untuk teks */
+}
+
+/* Efek fade-in dengan blur */
+html, body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: fadeInWithBlur 2s ease-out;
+}
+
+/* Animasi fade-in dengan blur */
+@keyframes fadeInWithBlur {
+    0% {
+        opacity: 0;
+        filter: blur(10px); /* Mulai dengan kabur */
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0); /* Jelas pada akhir animasi */
+    }
+}
+
